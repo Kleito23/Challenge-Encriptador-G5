@@ -1,0 +1,41 @@
+body{
+    background: #F3F5FC;
+}
+
+#texto-a-modificar{
+    width: 577px;
+    height: 48px;
+    background: #F3F5FC;
+    border: none;
+    margin-top: 168px;
+    margin-left: 240px;
+    font-size: 40px;
+    color: #0A3871;
+}
+
+#texto-a-modificar::placeholder{
+    color: #0A3871;
+    font-size: 40px;
+}
+
+#texto-a-modificar:focus{
+    outline: none;
+}
+
+.texto-modificado{
+    width: 350px;
+    height: 800px;
+    float: right;
+    background: white;
+    margin-right: 200px;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 20px;
+
+}
+
+.imagen-div{
+    display: block;
+    margin: 0 auto;
+    
+}
