@@ -2,6 +2,11 @@ body{
     background: #F3F5FC;
 }
 
+header{
+    position: absolute;
+    top: 2%;
+}
+
 .principal{
     width: 1280px;
     height: 925px;
@@ -73,6 +78,41 @@ textarea{
 #texto2{
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
+    padding: 3%;
+}
+
+.copy{
+    position: absolute;
+    bottom: 5%;
+    left: 110%;
+    visibility: hidden;
+    width: 20%;
+    transition: 0;
+}
+
+.copy.show{
+    visibility: initial;
+}
+
+button{
+    width: 40%;
+    padding: 20px 0;
+    font-size: 14px;
+    background: #0A3871;
+    color: white;
+    border-radius: 18px;
+    border-color: #183e6d;
+    border-style: solid;
+    font-family: 'Montserrat', sans-serif;
+    transition: 1s;
+    cursor: pointer;
+}
+
+button.disabled {
+    opacity: 0.3;
+    background: grey;
+    color: black;
+    cursor: initial;
 }
 
 .botones{
@@ -83,6 +123,7 @@ textarea{
 }
 
 .botones p{
+    margin-bottom: 10px;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     
@@ -98,34 +139,10 @@ textarea{
   /* Moving button 4px to y-axis */    
 }
 
-#button-encriptar{
-    width: 40%;
-    padding: 20px 0;
-    font-size: 14px;
-    background: #0A3871;
-    color: white;
-    border-radius: 18px;
-    border-color: #183e6d;
-    border-style: solid;
-    font-family: 'Montserrat', sans-serif;
-    transition: 1s;
-    cursor: pointer;
-}
-
 #button-desencriptar{
-    width: 40%;
-    padding: 20px 0;
-    position: absolute;
-    left: 50%;
-    font-size: 14px;
+
     background: transparent;
     color: #0A3871;
-    border-radius: 18px;
-    border-color: #0A3871;
-    border-style: solid;
-    font-family: 'Montserrat', sans-serif;
-    transition: 1s;
-    cursor: pointer;
 }
 
 #boton-copiar{
@@ -147,12 +164,123 @@ textarea{
 }
 
 #boton-copiar:hover{
-    transform: scale(1.1);
-    background: #F3F5FC;
+    transform: scale(1.01);
+    
 }
 
 #boton-copiar:active{
-    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
-    transform: translateY(10px);
+    transform: translateY(1px);
   /* Moving button 4px to y-axis */
+}
+
+.error{
+    width: 100%;
+    max-width: 300px;
+    position: absolute;
+    bottom: 20%;
+    left: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.24);
+    text-align: center;
+    background: red;
+    color: white;
+    font-size: 18px;
+    visibility: hidden;
+    transform: translateY(100%);
+    transition: 200ms ease-out;
+}
+
+.error.show{
+    transform: translateY(0%);
+    visibility: visible;
+}
+
+#pie-pagina{
+    width: 100%;
+    background: #3766a0;
+    text-align: center;
+}
+
+.logos{
+    width: 40px;
+    vertical-align: middle;
+    padding: 15px;
+}
+
+.logos:nth-child(2){
+    width: 20px;
+}
+
+.links{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-decoration:dotted;
+    vertical-align: middle;
+    margin-right: 20px;
+    margin-left: 0px;
+}
+
+@media screen and (max-width:1024px){
+    .principal, #texto-modificado, #texto-a-modificar, .botones, button, .error{
+        width: auto;
+    }
+
+    textarea{
+        height: 39%;
+    }
+
+    #texto-a-modificar{
+        left: 10%;
+        top: 10%;
+    }
+
+    #texto-modificado{
+        height: 27%;
+        top: 74%;
+        left: 13%;
+    }
+
+    #imagen{
+        height: 80%;
+    }
+
+    #imagen img{
+        display: none;
+    }
+
+    #texto1{
+        position: absolute;
+        top: 0; 
+    }
+
+    #texto2{
+        position: absolute;
+        top: 28%;
+    }
+
+    .botones{
+        top: 50%;
+        left: 10%;
+    }
+    
+    button{
+        padding: 7% 30%;
+        margin: 10px;
+        display: flex;
+    }
+
+    .copy{
+        left: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .error{
+        left: 10%;
+        bottom: 52%;
+    }
 }
