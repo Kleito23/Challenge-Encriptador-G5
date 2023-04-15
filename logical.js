@@ -39,7 +39,7 @@ function desencriptar(){
         document.getElementById("texto-modificado").innerHTML = "<p id='encriptado-texto'>" + texto_desencriptado + "</p>";
         document.getElementById("div-copy").innerHTML = "<button id='boton-copiar' onclick='copiarTexto()'>Copiar</button>";
     }else{
-        alert("Error! Ingrese un texto correcto!")
+        alert("Error! Ingrese solo letras minusculas y sin caracteres!")
     }
 
 }
