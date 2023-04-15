@@ -7,7 +7,20 @@ body{
     height: 925px;
 }
 
+textarea{
+    width: 50%;
+    height: 65%;
+    overflow: hidden;
+}
 
+#encriptado-texto{
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+}
 
 #texto-a-modificar{
     background: #F3F5FC;
@@ -37,16 +50,10 @@ body{
     top: 30px;
     right: 80px;
     border-radius: 30px;
-
+    word-wrap: break-word;
 }
 
-#texto-modificado p{
-    position: absolute;
-    top: 2%;
-    left: 5%;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-}
+
 
 #imagen{
     width: 80%;
@@ -60,8 +67,7 @@ body{
     font-weight: bold;
     font-size: 25px;
     font-family: 'Montserrat', sans-serif;
-    position: absolute;
-    top: 20%;
+
 }
 
 #texto2{

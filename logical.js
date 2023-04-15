@@ -19,7 +19,7 @@ function encriptar(){
             texto_encriptado += caracter;
         }
 
-    document.getElementById("texto-modificado").innerHTML = "<p>" + texto_encriptado + "</p>";
+    document.getElementById("texto-modificado").innerHTML = "<p id='encriptado-texto'>" + texto_encriptado + "</p>";
     }
 
 }
