@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <title>Encriptador de texto</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
 </head>
 <body>
+    
     <main>
         <section class="principal">
             <input type="text" id="texto-a-modificar" required placeholder="Ingrese el texto aqui">
@@ -21,10 +23,11 @@
             </div>
             <div class="botones">
                 <p>( ! ) Solo letras minúsculas y sin acentos</p>
-                <input type="button" value="Encriptar" id="button-encriptar">
+                <input type="button" value="Encriptar" id="button-encriptar" onclick="encriptar()">
                 <input type="button" value="Desencriptar" id="button-desencriptar">
             </div>
         </section>
     </main>
 </body>
+<script src="logical.js" type="text/Javascript"></script>
 </html>
