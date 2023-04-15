@@ -88,6 +88,16 @@ textarea{
     
 }
 
+.botones input:hover{
+    transform: scale(1.1);
+}
+
+.botones input:active{
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    transform: translateY(10px);
+  /* Moving button 4px to y-axis */    
+}
+
 #button-encriptar{
     width: 40%;
     padding: 20px 0;
@@ -95,9 +105,11 @@ textarea{
     background: #0A3871;
     color: white;
     border-radius: 18px;
-    border-color: #0A3871;
+    border-color: #183e6d;
     border-style: solid;
     font-family: 'Montserrat', sans-serif;
+    transition: 1s;
+    cursor: pointer;
 }
 
 #button-desencriptar{
@@ -112,4 +124,35 @@ textarea{
     border-color: #0A3871;
     border-style: solid;
     font-family: 'Montserrat', sans-serif;
+    transition: 1s;
+    cursor: pointer;
+}
+
+#boton-copiar{
+    bottom: 8%;
+    right: 60%;
+    width: 50%;
+    padding: 20px 0;
+    position: absolute;
+    left: 25%;
+    font-size: 14px;
+    background: transparent;
+    color: #0A3871;
+    border-radius: 18px;
+    border-color: #0A3871;
+    border-style: solid;
+    font-family: 'Montserrat', sans-serif;
+    transition: 1s;
+    cursor: pointer;
+}
+
+#boton-copiar:hover{
+    transform: scale(1.1);
+    background: #F3F5FC;
+}
+
+#boton-copiar:active{
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    transform: translateY(10px);
+  /* Moving button 4px to y-axis */
 }
