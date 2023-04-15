@@ -2,17 +2,28 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Encriptador de texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
-        <input type="text" id="texto-a-modificar" required placeholder="Ingrese el texto aqui">
-        <div class="texto-modificado">
-            <img src="Imagen DIV.png" class="imagen-div">
-        </div>
+        <section class="principal">
+            <input type="text" id="texto-a-modificar" required placeholder="Ingrese el texto aqui">
+            <div id="texto-modificado">
+                <div id="imagen">
+                    <img src="Imagen DIV.png" >
+                    <p id="texto1">Ningún mensaje fue encontrado</p>
+                    <p id="texto2">Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+            </div>
+            <div class="botones">
+                <input type="button" value="Encriptar" id="button-encriptar">
+                <input type="button" value="Desencriptar" id="button-desencriptar">
+            </div>
+        </section>
     </main>
-    
 </body>
 </html>

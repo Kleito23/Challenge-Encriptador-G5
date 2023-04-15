@@ -2,40 +2,89 @@ body{
     background: #F3F5FC;
 }
 
+.principal{
+    width: 1280px;
+    height: 925px;
+}
+
 #texto-a-modificar{
-    width: 577px;
-    height: 48px;
     background: #F3F5FC;
     border: none;
-    margin-top: 168px;
-    margin-left: 240px;
-    font-size: 40px;
-    color: #0A3871;
+    font-size: 30px;
+    color: #19447A;
+    position: absolute;
+    top: 150px;
+    left: 280px;
 }
 
 #texto-a-modificar::placeholder{
-    color: #0A3871;
-    font-size: 40px;
+    color: #19447A;
+    font-size: 30px;
 }
 
 #texto-a-modificar:focus{
     outline: none;
 }
 
-.texto-modificado{
-    width: 350px;
-    height: 800px;
-    float: right;
+#texto-modificado{
     background: white;
-    margin-right: 200px;
-    margin-top: 40px;
-    text-align: center;
-    border-radius: 20px;
+    width: 23%;
+    height: 93%;
+    position: absolute;
+    top: 30px;
+    right: 80px;
+    border-radius: 30px;
 
 }
 
-.imagen-div{
-    display: block;
-    margin: 0 auto;
+#imagen{
+    width: 80%;
+    position: absolute;
+    top: 23%;
+    left: 10%;
+    text-align: center;
+}
+
+#texto1{
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
     
+}
+
+#texto2{
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.botones{
+    position: absolute;
+    top: 87%;
+    left: 280px;
+    width: 40%;
+}
+
+#button-encriptar{
+    width: 35%;
+    padding: 20px 0;
+    font-size: 14px;
+    background: #0A3871;
+    color: white;
+    border-radius: 18px;
+    border-color: #0A3871;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#button-desencriptar{
+    width: 35%;
+    padding: 20px 0;
+    position: absolute;
+    left: 50%;
+    font-size: 14px;
+    background: transparent;
+    color: #0A3871;
+    border-radius: 18px;
+    border-width: 2px;
+    border-color: #0A3871;
+    font-family: 'Montserrat', sans-serif;
 }
