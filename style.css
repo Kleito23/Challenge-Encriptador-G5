@@ -59,24 +59,31 @@ body{
 
 .botones{
     position: absolute;
-    top: 87%;
+    top: 83%;
     left: 280px;
     width: 40%;
 }
 
+.botones p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    
+}
+
 #button-encriptar{
-    width: 35%;
+    width: 40%;
     padding: 20px 0;
     font-size: 14px;
     background: #0A3871;
     color: white;
     border-radius: 18px;
     border-color: #0A3871;
+    border-style: solid;
     font-family: 'Montserrat', sans-serif;
 }
 
 #button-desencriptar{
-    width: 35%;
+    width: 40%;
     padding: 20px 0;
     position: absolute;
     left: 50%;
@@ -84,7 +91,7 @@ body{
     background: transparent;
     color: #0A3871;
     border-radius: 18px;
-    border-width: 2px;
     border-color: #0A3871;
+    border-style: solid;
     font-family: 'Montserrat', sans-serif;
 }
